@@ -23,26 +23,24 @@ const NavBar = () => {
 	}, []);
 
 	return (
-		<div className="">
-			<Navbar
-				className={`fixed w-full *:justify-around transition-colors duration-300  ${
-					navbarBg ? 'bg-blue-300' : 'bg-transparent'
-				}`}>
-				<Navbar.Brand href="https://flowbite-react.com">
-					<img src={Logo} className="mr-3 h-11 sm:h-20" alt="Afrocaribe" />
-				</Navbar.Brand>
-				<Navbar.Toggle />
-				<Navbar.Collapse>
-					<Navbar.Link href="#" active>
-						Home
-					</Navbar.Link>
-					<Navbar.Link href="#">About</Navbar.Link>
-					<Navbar.Link href="#">Services</Navbar.Link>
-					<Navbar.Link href="#">Pricing</Navbar.Link>
-					<Navbar.Link href="#">Contact</Navbar.Link>
-				</Navbar.Collapse>
-			</Navbar>
-		</div>
+		<Navbar
+			className={`fixed w-full *:justify-around transition-colors duration-300 z-10 ${
+				navbarBg ? 'bg-blue-300' : 'bg-transparent'
+			}`}>
+			<Navbar.Brand href="https://flowbite-react.com">
+				<img src={Logo} className="mr-3 h-11 sm:h-20" alt="Afrocaribe" />
+			</Navbar.Brand>
+			<Navbar.Toggle />
+			<Navbar.Collapse>
+				<Navbar.Link href="#" active>
+					Home
+				</Navbar.Link>
+				<Navbar.Link href="#">About</Navbar.Link>
+				<Navbar.Link href="#">Services</Navbar.Link>
+				<Navbar.Link href="#">Pricing</Navbar.Link>
+				<Navbar.Link href="#">Contact</Navbar.Link>
+			</Navbar.Collapse>
+		</Navbar>
 	);
 };
 
