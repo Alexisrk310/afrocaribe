@@ -33,7 +33,7 @@ const ProgramsPage = ({}) => {
 					</button>
 				</motion.div>
 			</ImagesSlider>
-			<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full mt-10">
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full my-10">
 				<WobbleCard
 					containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
 					className="">

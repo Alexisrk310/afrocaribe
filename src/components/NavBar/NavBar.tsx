@@ -34,26 +34,26 @@ const NavBar = () => {
 			<Navbar.Collapse>
 				<NavLink
 					to="/"
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:bg-green-300 dark:text-white md:bg-transparent md:text-cyan-700">
+					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700">
 					INICIO
 				</NavLink>
 				<NavLink
 					to="/acerca-de-nosotros"
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:bg-green-300 dark:text-white md:bg-transparent md:text-cyan-700">
+					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700">
 					NOSOTROS
 				</NavLink>
 				<NavLink
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:bg-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
+					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
 					to="/programas">
 					PROGRAMAS
 				</NavLink>
 				<NavLink
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:bg-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
+					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
 					to="noticias">
 					NOTICIAS
 				</NavLink>
 				<NavLink
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:bg-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
+					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
 					to="contacto">
 					CONTACTO
 				</NavLink>

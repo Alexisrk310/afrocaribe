@@ -1,5 +1,3 @@
-// src/components/WaveMask.js
-
 const WaveMask = () => {
 	return (
 		<svg className="absolute bottom-0 w-full h-32" viewBox="0 0 1440 320">

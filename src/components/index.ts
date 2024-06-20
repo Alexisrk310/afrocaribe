@@ -10,3 +10,8 @@ export * from './Highlight';
 export * from './WaveMask';
 export * from './ImagesSlider';
 export * from './WobbleCard';
+export * from './InfiniteMovingCards';
+export * from './HeaderHeroParallax';
+export * from './HeroParallax';
+export * from './ProductCardHeroParallax';
+export * from './FlipWords';

@@ -1,4 +1,4 @@
-import { NavBar } from '@/components';
+import { Footer, NavBar } from '@/components';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import {
 	AboutUsPage,
@@ -32,6 +32,7 @@ export const AppRouter = () => {
 				<Route path="/noticias" element={<NoticesPage />} />
 				<Route path="/contacto" element={<ContactPage />} />
 			</Routes>
+			<Footer />
 		</Router>
 	);
 };
