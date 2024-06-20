@@ -15,7 +15,7 @@ const NavBar = () => {
 	};
 
 	useEffect(() => {
-		windowRef.current = window; // Asignar window a windowRef.current
+		windowRef.current = window;
 		windowRef.current?.addEventListener('scroll', handleScroll); // Operador de opcional chaining para evitar errores
 		return () => {
 			windowRef.current?.removeEventListener('scroll', handleScroll); // Operador de opcional chaining para evitar errores
@@ -25,7 +25,7 @@ const NavBar = () => {
 	return (
 		<Navbar
 			className={`fixed w-full *:justify-around transition-colors duration-300 z-50 ${
-				navbarBg ? 'bg-green-400' : 'bg-transparent'
+				navbarBg ? 'bg-green-300' : 'bg-transparent'
 			}`}>
 			<Navbar.Brand>
 				<img src="./logo.jpg" className="mr-3 h-11 sm:h-20" alt="Afrocaribe" />
@@ -34,26 +34,46 @@ const NavBar = () => {
 			<Navbar.Collapse>
 				<NavLink
 					to="/"
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700">
+					className={({ isActive }) =>
+						isActive
+							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+					}>
 					INICIO
 				</NavLink>
 				<NavLink
 					to="/acerca-de-nosotros"
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700">
+					className={({ isActive }) =>
+						isActive
+							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
+							: 'block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+					}>
 					NOSOTROS
 				</NavLink>
 				<NavLink
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
+					className={({ isActive }) =>
+						isActive
+							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+					}
 					to="/programas">
 					PROGRAMAS
 				</NavLink>
 				<NavLink
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
+					className={({ isActive }) =>
+						isActive
+							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+					}
 					to="noticias">
 					NOTICIAS
 				</NavLink>
 				<NavLink
-					className="block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 dark:text-white md:bg-transparent md:text-cyan-700"
+					className={({ isActive }) =>
+						isActive
+							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+					}
 					to="contacto">
 					CONTACTO
 				</NavLink>

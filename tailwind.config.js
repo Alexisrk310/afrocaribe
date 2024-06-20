@@ -10,6 +10,9 @@ module.exports = {
     flowbiteContent(),
   ],
   theme: {
+    colors: {
+      colorMainBackground: '#77DD77',
+    },
     extend: {
       animation: {
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

@@ -34,7 +34,7 @@ const NoticesPage = ({}) => {
 				))}
 			</BentoGrid>
 			<div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-				<InfiniteMovingCards items={notices} direction="right" speed="slow" />
+				<InfiniteMovingCards items={notices} direction="right" speed="normal" />
 			</div>
 		</div>
 	);

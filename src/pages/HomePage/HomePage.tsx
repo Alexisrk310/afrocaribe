@@ -19,6 +19,9 @@ const HomePage = ({}) => {
 						¿QUIERES SABER MAS DE NOSOTROS?
 					</div>
 					<div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
+						SOMOS AFROCARIBE
+					</div>
+					{/* <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
 						SIGUE ESTOS PASOS
 					</div>
 					<div className="flex *:mx-2 *:my-2   flex-wrap justify-center">
@@ -28,7 +31,7 @@ const HomePage = ({}) => {
 						<button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
 							DESPUES AQUI
 						</button>
-					</div>
+					</div> */}
 				</motion.div>
 			</AuroraBackground>
 		</div>

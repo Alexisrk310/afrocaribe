@@ -86,8 +86,8 @@ export const items = [
 			'Exploramos la rica herencia artística y cultural de las comunidades afro en Colombia.',
 		header: (
 			<img
-				src="https://www.senado.gov.co/images/afro.jpg"
-				className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br"
+				src="https://www.alcarajo.org/wp-content/uploads/2019/09/WhatsApp-Image-2019-09-22-at-5.44.43-PM.jpeg"
+				className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br object-cover "
 				alt="Arte y Cultura: Expresiones Afrocolombianas"
 			/>
 		),

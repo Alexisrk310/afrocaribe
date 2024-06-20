@@ -19,12 +19,12 @@ const ContactPage = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1 }}
-				className="absolute w-60 h-60 rounded-xl bg-purple-300 dark:bg-slate-700 top-40 -left-16 z-0 transform rotate-45 hidden md:block animate-fall"></motion.div>
+				className="absolute w-60 h-60 rounded-xl bg-green-300 top-40 -left-16 z-0 transform rotate-45 hidden md:block animate-fall"></motion.div>
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1 }}
-				className="absolute w-60 h-60 rounded-xl bg-purple-300 dark:bg-slate-700 bottom-8 right-12 transform rotate-12 hidden md:block animate-fall"></motion.div>
+				className="absolute w-60 h-60 rounded-xl bg-green-300 bottom-8 right-12 transform rotate-12 hidden md:block animate-fall"></motion.div>
 			<motion.div
 				initial={{ opacity: 0, y: 50 }}
 				animate={{ opacity: 1, y: 0 }}
@@ -198,12 +198,12 @@ const ContactPage = () => {
 										'font-medium',
 										'rounded-md',
 										'text-white',
-										'bg-indigo-600',
-										'hover:bg-indigo-700',
+										'bg-green-600',
+										'hover:bg-green-700',
 										'focus:outline-none',
 										'focus:ring-2',
 										'focus:ring-offset-2',
-										'focus:ring-indigo-500',
+										'focus:ring-green-500',
 										'w-full'
 									)}>
 									Enviar
@@ -233,12 +233,12 @@ const ContactPage = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1 }}
-				className="w-32 h-32 absolute bg-purple-300 rounded-full top-40 right-4 hidden sm:block"></motion.div>
+				className="w-32 h-32 absolute bg-green-300 rounded-full top-40 right-4 hidden sm:block"></motion.div>
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1 }}
-				className="w-32 h-32 absolute bg-purple-300 rounded-full bottom-8 left-4 transform rotate-45 hidden sm:block"></motion.div>
+				className="w-32 h-32 absolute bg-green-300 rounded-full bottom-8 left-4 transform rotate-45 hidden sm:block"></motion.div>
 		</div>
 	);
 };
