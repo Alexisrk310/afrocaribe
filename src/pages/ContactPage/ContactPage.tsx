@@ -36,7 +36,8 @@ const ContactPage = () => {
 					'p-8',
 					'max-w-4xl',
 					'w-full',
-					'z-20'
+					'z-20',
+					'mt-10'
 				)}>
 				<h2 className={cn('text-2xl', 'font-bold', 'mb-6', 'text-center')}>
 					Contáctanos
