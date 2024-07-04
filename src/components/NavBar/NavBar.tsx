@@ -37,7 +37,7 @@ const NavBar = () => {
 					className={({ isActive }) =>
 						isActive
 							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
-							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-600 md:bg-transparent md:text-cyan-700'
 					}>
 					INICIO
 				</NavLink>
@@ -46,7 +46,7 @@ const NavBar = () => {
 					className={({ isActive }) =>
 						isActive
 							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
-							: 'block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+							: 'block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-600 md:bg-transparent md:text-cyan-700'
 					}>
 					NOSOTROS
 				</NavLink>
@@ -54,7 +54,7 @@ const NavBar = () => {
 					className={({ isActive }) =>
 						isActive
 							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
-							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-600 md:bg-transparent md:text-cyan-700'
 					}
 					to="/programas">
 					PROGRAMAS
@@ -63,7 +63,7 @@ const NavBar = () => {
 					className={({ isActive }) =>
 						isActive
 							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
-							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-600 md:bg-transparent md:text-cyan-700'
 					}
 					to="noticias">
 					NOTICIAS
@@ -72,7 +72,7 @@ const NavBar = () => {
 					className={({ isActive }) =>
 						isActive
 							? 'block py-2 pl-3 pr-4 md:p-0 text-green-600  md:bg-transparent md:text-cyan-700'
-							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-300 md:bg-transparent md:text-cyan-700'
+							: 'pointer block py-2 pl-3 pr-4 md:p-0 text-black hover:text-green-600 md:bg-transparent md:text-cyan-700'
 					}
 					to="contacto">
 					CONTACTO

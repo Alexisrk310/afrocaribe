@@ -39,7 +39,15 @@ const ContactPage = () => {
 					'z-20',
 					'mt-10'
 				)}>
-				<h2 className={cn('text-2xl', 'font-bold', 'mb-6', 'text-center')}>
+				<h2
+					className={cn(
+						'text-4xl',
+						'font-bold',
+						'mb-6',
+						'text-center',
+						'text-green-600',
+						'uppercase'
+					)}>
 					Contáctanos
 				</h2>
 				<div className="flex flex-col md:flex-row justify-between items-center">

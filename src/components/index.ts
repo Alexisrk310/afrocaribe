@@ -15,3 +15,4 @@ export * from './HeaderHeroParallax';
 export * from './HeroParallax';
 export * from './ProductCardHeroParallax';
 export * from './FlipWords';
+export * from './RevealOnScroll';

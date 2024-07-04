@@ -16,6 +16,7 @@ const StickyScroll = ({
 	contentClassName?: string;
 }) => {
 	const [activeCard, setActiveCard] = useState(0);
+	const [imageTop, setImageTop] = useState('10%'); // Nuevo estado para la posición de la imagen
 	const ref = useRef<any>(null);
 	const { scrollYProgress } = useScroll({
 		offset: ['start start', 'end start'],
@@ -36,6 +37,9 @@ const StickyScroll = ({
 			0
 		);
 		setActiveCard(closestBreakpointIndex);
+
+		// Actualizar la posición de la imagen
+		setImageTop(`${10 + 40 * latest}%`);
 	});
 
 	const backgroundColors = ['var(--blue-400)', 'var(--blue-500)'];
@@ -90,9 +94,9 @@ const StickyScroll = ({
 				</div>
 			</div>
 			<div
-				style={{ background: backgroundGradient }}
+				style={{ background: backgroundGradient, top: imageTop }} // Aplicar la posición de la imagen
 				className={cn(
-					'hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden mt-20',
+					'hidden lg:block h-60 w-80 rounded-md bg-white sticky overflow-hidden mt-20',
 					contentClassName
 				)}>
 				{content[activeCard].content ?? null}

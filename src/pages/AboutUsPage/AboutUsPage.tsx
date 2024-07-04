@@ -1,5 +1,10 @@
 'use client';
-import { HeroHighlight, Highlight, StickyScroll } from '@/components';
+import {
+	HeroHighlight,
+	Highlight,
+	RevealOnScroll,
+	StickyScroll,
+} from '@/components';
 import { contentAbout } from '@/constant/ContantAboutUs';
 import { motion } from 'framer-motion';
 
@@ -28,9 +33,15 @@ const AboutUsPage = ({}) => {
 					</Highlight>
 				</motion.h1>
 			</HeroHighlight>
-			<>
+			<RevealOnScroll>
 				<StickyScroll content={contentAbout} />
-				<h1 className="font-bold text-center text-2xl p-10">PRINCIPIOS</h1>
+			</RevealOnScroll>
+			<RevealOnScroll>
+				<h1 className=" p-10 text-4xl text-green-600 text-center font-bold my-12">
+					PRINCIPIOS
+				</h1>
+			</RevealOnScroll>
+			<RevealOnScroll>
 				<div className="flex justify-center gap-10 flex-wrap mb-20">
 					<motion.div
 						className="w-96 text-center border rounded-lg overflow-hidden p-10 shadow-lg"
@@ -99,7 +110,7 @@ const AboutUsPage = ({}) => {
 						</p>
 					</motion.div>
 				</div>
-			</>
+			</RevealOnScroll>
 		</>
 	);
 };

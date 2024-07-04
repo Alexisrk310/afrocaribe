@@ -4,6 +4,7 @@ import {
 	BentoGridItem,
 	FlipWords,
 	InfiniteMovingCards,
+	RevealOnScroll,
 } from '@/components';
 import { items, notices, words } from '@/constant/ContantNotices';
 
@@ -18,24 +19,34 @@ const NoticesPage = ({}) => {
 					para poder estar informado
 				</div>
 			</div>
-			<h1 className="text-4xl text-green-600 text-center font-bold my-12">
-				NOTICIAS IMPORTANTES
-			</h1>
-			<BentoGrid className="max-w-4xl mx-auto">
-				{items.map((item, i) => (
-					<BentoGridItem
-						key={i}
-						title={item.title}
-						description={item.description}
-						header={item.header}
-						icon={item.icon}
-						className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
+			<RevealOnScroll>
+				<h1 className="text-4xl text-green-600 text-center font-bold my-12">
+					NOTICIAS IMPORTANTES
+				</h1>
+			</RevealOnScroll>
+			<RevealOnScroll>
+				<BentoGrid className="max-w-4xl mx-auto">
+					{items.map((item, i) => (
+						<BentoGridItem
+							key={i}
+							title={item.title}
+							description={item.description}
+							header={item.header}
+							icon={item.icon}
+							className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
+						/>
+					))}
+				</BentoGrid>
+			</RevealOnScroll>
+			<RevealOnScroll>
+				<div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+					<InfiniteMovingCards
+						items={notices}
+						direction="right"
+						speed="normal"
 					/>
-				))}
-			</BentoGrid>
-			<div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-				<InfiniteMovingCards items={notices} direction="right" speed="normal" />
-			</div>
+				</div>
+			</RevealOnScroll>
 		</div>
 	);
 };
