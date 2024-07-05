@@ -5,7 +5,7 @@ import {
 	RevealOnScroll,
 	StickyScroll,
 } from '@/components';
-import { contentAbout } from '@/constant/ContantAboutUs';
+import { contentAbout } from '@/constant/AboutUsContant';
 import { motion } from 'framer-motion';
 
 const AboutUsPage = ({}) => {

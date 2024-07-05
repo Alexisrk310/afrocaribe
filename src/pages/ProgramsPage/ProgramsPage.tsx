@@ -1,6 +1,6 @@
 'use client';
 import { ImagesSlider, RevealOnScroll, WobbleCard } from '@/components';
-import { imagesPrograms } from '@/constant/ContantPrograms';
+import { imagesPrograms } from '@/constant/ProgramsContant';
 import { motion } from 'framer-motion';
 
 const ProgramsPage = ({}) => {

@@ -15,6 +15,7 @@ export const contentAbout = [
 			</div>
 		),
 	},
+
 	{
 		title: 'VISIÓN',
 		description:
@@ -31,6 +32,7 @@ export const contentAbout = [
 			</div>
 		),
 	},
+
 	{
 		title: 'Representativa',
 		description:
@@ -47,6 +49,7 @@ export const contentAbout = [
 			</div>
 		),
 	},
+
 	{
 		title: 'Integral',
 		description:
@@ -95,16 +98,17 @@ export const contentAbout = [
 			</div>
 		),
 	},
+	//LOGIC
 	{
 		title: '',
 		description: '',
 		content: (
 			<div className="h-full w-full  flex items-center justify-center text-white">
 				<img
-					src="./logo.jpg"
+					src="./proactiva.jpg"
 					width={300}
 					height={300}
-					className="h-full w-full"
+					className="h-full w-full object-cover"
 					alt="proactiva"
 				/>
 			</div>
@@ -113,6 +117,76 @@ export const contentAbout = [
 	{
 		title: '',
 		description: '',
-		content: <></>,
+		content: (
+			<div className="h-full w-full  flex items-center justify-center text-white">
+				<img
+					src="./proactiva.jpg"
+					width={300}
+					height={300}
+					className="h-full w-full object-cover"
+					alt="proactiva"
+				/>
+			</div>
+		),
+	},
+	{
+		title: '',
+		description: '',
+		content: (
+			<div className="h-full w-full  flex items-center justify-center text-white">
+				<img
+					src="./proactiva.jpg"
+					width={300}
+					height={300}
+					className="h-full w-full object-cover"
+					alt="proactiva"
+				/>
+			</div>
+		),
+	},
+	{
+		title: '',
+		description: '',
+		content: (
+			<div className="h-full w-full  flex items-center justify-center text-white">
+				<img
+					src="./proactiva.jpg"
+					width={300}
+					height={300}
+					className="h-full w-full object-cover"
+					alt="proactiva"
+				/>
+			</div>
+		),
+	},
+	{
+		title: '',
+		description: '',
+		content: (
+			<div className="h-full w-full  flex items-center justify-center text-white">
+				<img
+					src="./proactiva.jpg"
+					width={300}
+					height={300}
+					className="h-full w-full object-cover"
+					alt="proactiva"
+				/>
+			</div>
+		),
+	},
+	{
+		title: '',
+		description: '',
+		content: (
+			<div className="h-full w-full  flex items-center justify-center text-white">
+				<img
+					src="./proactiva.jpg"
+					width={300}
+					height={300}
+					className="h-full w-full object-cover"
+					alt="proactiva"
+				/>
+			</div>
+		),
 	},
 ];

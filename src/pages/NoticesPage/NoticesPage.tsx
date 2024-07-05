@@ -6,7 +6,7 @@ import {
 	InfiniteMovingCards,
 	RevealOnScroll,
 } from '@/components';
-import { items, notices, words } from '@/constant/ContantNotices';
+import { items, notices, words } from '@/constant/NoticesContant';
 
 const NoticesPage = ({}) => {
 	return (

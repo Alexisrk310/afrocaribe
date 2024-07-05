@@ -16,7 +16,7 @@ const StickyScroll = ({
 	contentClassName?: string;
 }) => {
 	const [activeCard, setActiveCard] = useState(0);
-	const [imageTop, setImageTop] = useState('10%'); // Nuevo estado para la posición de la imagen
+	const [imageTop, setImageTop] = useState('10%');
 	const ref = useRef<any>(null);
 	const { scrollYProgress } = useScroll({
 		offset: ['start start', 'end start'],
@@ -38,7 +38,6 @@ const StickyScroll = ({
 		);
 		setActiveCard(closestBreakpointIndex);
 
-		// Actualizar la posición de la imagen
 		setImageTop(`${10 + 40 * latest}%`);
 	});
 
@@ -62,9 +61,9 @@ const StickyScroll = ({
 			animate={{
 				backgroundColor: backgroundColors[activeCard % backgroundColors.length],
 			}}
-			className="min-h-screen flex justify-center relative space-x-10 p-10"
+			className="min-h-screen flex flex-col lg:flex-row justify-center relative space-y-10 lg:space-y-0 lg:space-x-10 p-4 lg:p-10"
 			ref={ref}>
-			<div className="relative flex items-start px-4 w-full lg:w-2/3">
+			<div className="relative flex flex-col items-start px-4 w-full lg:w-2/3">
 				<div className="max-w-2xl w-full">
 					{content.map((item, index) => (
 						<div key={item.title + index} className="my-20">
@@ -94,7 +93,7 @@ const StickyScroll = ({
 				</div>
 			</div>
 			<div
-				style={{ background: backgroundGradient, top: imageTop }} // Aplicar la posición de la imagen
+				style={{ background: backgroundGradient, top: imageTop }}
 				className={cn(
 					'hidden lg:block h-60 w-80 rounded-md bg-white sticky overflow-hidden mt-20',
 					contentClassName
